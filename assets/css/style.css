@@ -86,7 +86,7 @@ h3 {
 
 nav {
   float: right;
-  margin-top: 25px;
+
 }
 
 nav ul {
@@ -244,17 +244,16 @@ input[type=submit] {
   }
   .container {
     max-width: 768px;
+  
   }
-  .main-section {
+  #main-section {
     max-width: 420px;
   }
   #headshot {
     width: 100%;
     padding-bottom: 20px;
   }
-  .sidebar {
-    float: left;
-  }
+ 
 }
 
 
@@ -265,26 +264,30 @@ input[type=submit] {
   }
 
   #masthead {
-    position: fixed
+    position: static
   }
 
-  #logo #headshot {
+  #logo,
+   #headshot {
     width: 50%
   }
-
-  nav ul {
-    line-height: 75%;
+  .sidebar {
+    margin-top: 0;
   }
 
+  
+
   #main-container {
-    padding-top: 50px;
+    padding-top: 0;
     margin: 0;
   }
 
-  .main-section,
+  #main-section,
   .sidebar {
     max-width: 100%;
     padding-top: 20px;
+    margin-top: 50px;
+    margin-bottom: 0;
   }
   .gallery {
     /* Box-model */
@@ -293,6 +296,10 @@ input[type=submit] {
     /* Positioning */
     margin-bottom: 10px;
   }
+  div.gallery {
+    margin: 15px;
+  }
+  
 
   
 
@@ -301,6 +308,17 @@ input[type=submit] {
   body {
     background-color: black;
   }
+  #masthead {
+    position: static;
+    padding:0;
+  
+  }
+  nav {
+    clear: both;
+    margin: auto;
+    
+  }
+ 
 
   #logo {
     width: 100%;
